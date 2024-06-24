@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Solidifier",
+    "version": "1.0",
+    "description": "Captura trechos de vídeos do YouTube e cria flashcards no Anki automaticamente",
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "storage",
+        "devtools",
+        "https://www.youtube.com/*",
+        "https://ankiuser.net/*"
+    ],
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": {
+        "128": "images/icon128.png"
+      }
+    },
+    "icons": {
+      "128": "images/icon128.png"
+    }
+  }

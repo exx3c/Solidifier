@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Solidifier</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            width: 300px; /* Aumentei a largura para acomodar melhor os elementos */
+            }
+            table {
+            width: 100%;
+            border-collapse: collapse;
+            }
+            table, th, td {
+            border: 1px solid #ccc;
+            }
+            th, td {
+            padding: 10px;
+            text-align: center;
+            }
+            input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+            button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            }
+            button:hover {
+            background-color: #45a049;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <h2>Listening Solidifier</h2>
+
+        <table>
+            <tr>
+                <td><button id="setStartTime">Set Start Time</button></td>
+                <td><button id="setEndTime">Set End Time</button></td>
+                <td><button id="createFlashCard">Create Flash Card</button></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="startTime" placeholder="00" readonly></td>
+                <td><input type="text" id="endTime" placeholder="00" readonly></td>
+                <td></td> <!-- Coluna vazia para alinhar com os botões acima -->
+            </tr>
+        </table>
+
+        <script src="popup.js"></script>
+    </body>
+</html>
